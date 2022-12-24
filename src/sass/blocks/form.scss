@@ -1,0 +1,58 @@
+$inputBg: #202020;
+
+.form {
+  label {
+    @include visually-hidden;
+  }
+}
+.form__input {
+  margin-bottom: 2rem;
+
+  input,
+  textarea {
+    background-color: $inputBg;
+    width: 100%;
+    height: 6rem;
+    border-radius: 1rem;
+    display: block;
+    border: none;
+    box-shadow: none;
+    resize: none;
+    font-size: 2rem;
+    list-style: 1.1;
+    color: $white;
+    padding: 1.6rem 1rem 1.6rem 3rem;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: $white;
+      opacity: 1;
+    }
+  }
+  textarea {
+    min-height: 20rem;
+  }
+}
+.form-button {
+  border-radius: 1rem;
+  background-color: $second;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  appearance: none;
+  cursor: pointer;
+
+  padding: 1.6rem 0;
+  font-size: 2rem;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: center;
+  transition-duration: 500ms;
+  transition-property: background-color;
+  &:hover,
+  &:active {
+    background-color: darken($second, 15%);
+  }
+}

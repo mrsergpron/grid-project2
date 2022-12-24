@@ -1,0 +1,60 @@
+$lineColor: #2f2f2f;
+$responsiveText: #464646;
+
+.responsive__wrap {
+  background: url(../img/bg-two.png) left bottom no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.responsive__information {
+  margin-left: auto;
+  max-width: 36rem;
+}
+.responsive__title {
+  font-size: 3rem;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 2.5rem 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: $lineColor;
+    position: absolute;
+    width: 7rem;
+    height: 0.2rem;
+    left: 0;
+    top: -2.5rem;
+  }
+}
+.responsive__text {
+  font-size: 1.4rem;
+  color: $responsiveText;
+  line-height: 1.429;
+  margin: 2rem 0;
+}
+.responsive__list {
+  margin: 2rem 0;
+}
+.responsive__button {
+  @include button($thirty);
+  margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .responsive__wrap {
+    background: none;
+  }
+  .responsive__information {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .responsive__wrap {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}

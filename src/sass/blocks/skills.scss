@@ -1,0 +1,69 @@
+.skills {
+  background-color: $second;
+}
+.skills__wrap {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+}
+.skills__left {
+  flex-basis: 28rem;
+  margin-right: 11.5rem;
+}
+.skills__right {
+  flex-grow: 1;
+}
+.skills__title {
+  font-size: 3rem;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 2.5rem 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $white;
+    width: 7rem;
+    height: 0.2rem;
+    left: 0;
+    top: -2.5rem;
+  }
+}
+.skills__text {
+  font-size: 1.4rem;
+  color: $white;
+  line-height: 1.429;
+  margin: 2rem 0;
+}
+.skills__button {
+  @include button($primary) {
+    margin-top: 5rem;
+  }
+}
+.skills__progress {
+  margin: 2rem 0;
+}
+@media (max-width: 980px) {
+  .skills__left {
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .skills__wrap {
+    flex-direction: column;
+  }
+  .skills__left {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+    flex-basis: auto;
+  }
+}
+@media (max-width: 480px) {
+  .skills__wrap {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
