@@ -3,4 +3,4 @@
 - Проект построен на: HTML / SCSS / Grid
 - Gulp сборка
 - Адаптированный
-- [Открыть проект]()
+- [Открыть проект](https://mrsergpron.github.io/grid-project2/)
